@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Colors */
+
+/* Primary */
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+}
+
+/* Accent */
+:root {
+  --Blue: hsl(248, 32%, 49%);
+}
+
+/* Neutral */
+:root {
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: hsla(0, 100%, 74%, 0.8);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 45px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.text-content p {
+  line-height: 1.6;
+}
+
+.sign-up {
+  flex: 1;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__btn {
+  width: 100%;
+  padding: 25px 0;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+
+  box-shadow: 0px 8px 0px 0px hsla(249, 10%, 26%, 0.3);
+}
+
+.sign-up__btn span {
+  font-weight: 400;
+}
+
+.form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+
+  box-shadow: 0px 8px 0px 0px hsla(249, 10%, 26%, 0.3);
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 2px solid #d6d3d3;
+  padding: 20px 30px;
+  border-radius: 5px;
+  color: var(--Dark-Blue);
+  font-weight: 600;
+}
+
+input:focus {
+  border-color: var(--Dark-Blue);
+}
+
+.input-wrapper.success input {
+  border-color: var(--Green);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input-wrapper:first-child {
+  margin-top: 0;
+}
+
+.input-wrapper small {
+  display: none;
+}
+
+.input-wrapper.error small {
+  display: block;
+  color: var(--Red);
+  font-size: 11px;
+  font-style: italic;
+  text-align: right;
+}
+
+.error-icon {
+  display: none;
+}
+
+.input-wrapper.error .error-icon {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 25px;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--Green);
+
+  box-shadow: 0px 5px 0px 0px hsl(154, 30%, 51%);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  opacity: 0.8;
+}
+
+.form-btn:active {
+  box-shadow: 0px 2px 0px 0px hsl(154, 30%, 51%);
+  transform: translateY(2px);
+}
+
+.small-text {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--Grayish-Blue);
+}
+
+.small-text a {
+  color: var(--Red);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .container {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
+
+  .text-content h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .text-content {
+    margin: 25px 0;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .sign-up {
+    margin-bottom: 45px;
+  }
+}

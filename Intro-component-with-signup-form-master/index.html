@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Text content -->
+    <div class="text-content">
+      <h1>Learn to code by watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <!--  Sign Up Form-->
+    <div class="sign-up">
+
+      <div class="sign-up__btn">Try it free 7 days <span>then $20/mo. thereafter</span></div>
+
+      <form class="form">
+        <div class="input-wrapper">
+          <input type="text" class="firstname" placeholder="First Name">
+          <small>First Name cannot be empty</small>
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+        </div>
+
+        <div class="input-wrapper">
+          <input type="text" class="lastname" placeholder="Last Name">
+          <small>Last Name cannot be empty</small>
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+        </div>
+
+        <div class="input-wrapper">
+          <input type="email" class="email" placeholder="Email Address">
+          <small>Looks like this is not an email</small>
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+        </div>
+
+        <div class="input-wrapper">
+          <input type="password" class="password" placeholder="Password">
+          <small>Password cannot be empty</small>
+          <img src="images/icon-error.svg" alt="error icon" class="error-icon">
+        </div>
+
+        <button class="form-btn">Claim your free trial </button>
+        <small class="small-text">By clicking the button, you are agreeing to our <a href="#">Terms and
+            Services</a></small>
+      </form>
+    </div>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
