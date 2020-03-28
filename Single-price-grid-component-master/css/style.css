@@ -86,10 +86,13 @@ body {
 }
 
 .price-text {
+  display: flex;
+  align-items: center;
   color: hsl(181, 55%, 61%);
 }
 
 .price {
+  margin-right: 10px;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
