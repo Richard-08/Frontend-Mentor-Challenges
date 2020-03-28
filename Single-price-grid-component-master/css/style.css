@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+/* ## Colors */
+
+/* ### Primary */
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+}
+
+/* ### Neutral */
+:root {
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 640px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 10px 8px hsla(218, 22%, 67%, 0.2);
+}
+
+/* //////////// Block 1 ///////////// */
+
+.block-1 {
+  background-color: #fff;
+  color: var(--Grayish-Blue);
+  font-weight: 700;
+  padding: 45px 40px;
+}
+
+.block-1 h2 {
+  color: var(--Cyan);
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.block-1 p {
+  line-height: 1.5;
+}
+
+.block-1 p:nth-child(2) {
+  color: var(--Bright-Yellow);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.blocks-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* //////////// Block 2 ///////////// */
+
+.block-2 {
+  background-color: var(--Cyan);
+  padding: 40px;
+}
+
+.block-2 h3 {
+  margin-bottom: 25px;
+}
+
+.block-2 p:nth-child(3) {
+  margin: 15px 0 30px 0;
+}
+
+.price-text {
+  color: hsl(181, 55%, 61%);
+}
+
+.price {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sign-up-btn {
+  display: block;
+  width: 100%;
+  padding: 17px 0 12px 0;
+  background-color: var(--Bright-Yellow);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 5px hsla(179, 62%, 35%, 0.4);
+  cursor: pointer;
+}
+
+.sign-up-btn:hover {
+  transform: translateY(-2px);
+  color: var(--Cyan);
+}
+
+.sign-up-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* //////////// Block 3 ///////////// */
+
+.block-3 {
+  background-color: hsl(179, 47%, 52%);
+  padding: 40px;
+}
+
+.block-3 h3 {
+  margin-bottom: 20px;
+}
+
+.block-3 p {
+  color: hsl(181, 100%, 90%);
+}
+
+/* //////////// Media Queries ///////////// */
+
+@media screen and (max-width: 600px) {
+  .blocks-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .block-1 h2 {
+    font-size: 22px;
+  }
+
+  .block-1 p:nth-child(2) {
+    font-size: 17px;
+  }
+}
