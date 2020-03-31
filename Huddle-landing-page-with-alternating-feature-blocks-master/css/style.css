@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+/* font-family: 'Open Sans', sans-serif; */
+
+/* ## Colors */
+
+/* ### Primary */
+:root {
+  --Pink: hsl(322, 100%, 66%);
+}
+/* ### Neutral */
+:root {
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: var(--Grayish-Blue);
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--Very-Dark-Cyan);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1280px;
+}
+
+.main {
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--Very-Pale-Cyan);
+  padding: 40px 0;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+}
+
+.main-content__text {
+  max-width: 515px;
+  margin-right: 75px;
+  flex: 1;
+}
+
+.main-content__text p {
+  margin: 35px 0 20px 0;
+  color: var(--Very-Dark-Cyan);
+}
+
+.main__btn {
+  background-color: var(--Pink);
+  color: #fff;
+  box-shadow: 0 0 5px 5px hsla(322, 100%, 66%, 0.2);
+}
+
+.main__btn:hover {
+  box-shadow: 0 0 7px 7px hsla(322, 100%, 66%, 0.4);
+}
+
+.btn {
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 20px 60px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.main-content__img {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header__logo {
+  max-width: 200px;
+}
+
+.header__btn {
+  background-color: #fff;
+  color: var(--Very-Dark-Cyan);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+}
+
+.header__btn:hover {
+  box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.blocks {
+  padding: 100px 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  margin: 40px 0;
+  border-radius: 15px;
+  padding: 40px 0;
+  padding-left: 120px;
+}
+
+.block__text {
+  flex: 1;
+}
+
+.block__text h2 {
+  margin-bottom: 30px;
+}
+
+.block__img {
+  flex: 1;
+}
+
+.block__img img {
+  width: 80%;
+}
+
+.small-block {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 40px 120px;
+  margin: 0 auto;
+  margin-bottom: -180px;
+  text-align: center;
+  position: relative;
+}
+
+.small-block h2 {
+  margin-bottom: 40px;
+}
+
+.small-block__btn {
+  font-size: 20px;
+  padding: 35px 100px;
+  background-color: var(--Pink);
+  color: #fff;
+  box-shadow: 0 0 5px 5px hsla(322, 100%, 66%, 0.2);
+}
+
+.small-block__btn:hover {
+  box-shadow: 0 0 7px 7px hsla(322, 100%, 66%, 0.4);
+}
+
+.footer {
+  background-color: var(--Very-Dark-Cyan);
+  padding: 190px 0 60px 0;
+  color: #fff;
+  font-size: 15px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__logo {
+  margin-bottom: 45px;
+}
+
+.ft-logo {
+  max-width: 240px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+}
+
+.links li {
+  margin-bottom: 30px;
+}
+
+.links li:hover {
+  color: black;
+}
+
+.feedback-info {
+  max-width: 365px;
+}
+
+.location,
+.phone,
+.mail {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.location div:first-child {
+  width: 25%;
+}
+
+.phone div:first-child,
+.mail div:first-child {
+  width: 10%;
+}
+
+.social-links span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px;
+  margin-right: 15px;
+}
+
+.social-links span:hover {
+  border-color: black;
+  color: black;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-image: url("../images/bg-hero-mobile.svg");
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .main-content,
+  .block,
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header__logo {
+    max-width: 150px;
+  }
+
+  .header__btn {
+    padding: 10px 30px;
+  }
+
+  .main-content__text {
+    margin: 0 0 20px 0;
+  }
+
+  .block {
+    padding-left: 0;
+  }
+
+  .block:nth-child(1),
+  .block:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  .small-block {
+    padding: 30px 0;
+  }
+
+  .small-block h2 {
+    font-size: 18px;
+  }
+
+  .small-block__btn {
+    font-size: 15px;
+    padding: 20px 60px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .ft-logo {
+    max-width: 150px;
+  }
+
+  .location,
+  .phone,
+  .mail {
+    justify-content: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .copyright {
+    margin-top: 10px;
+    text-align: center;
+  }
+}

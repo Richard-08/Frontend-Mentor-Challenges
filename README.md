@@ -8,3 +8,5 @@
 4) Single-price-grid-component-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Single-price-grid-component-master/
 
 5) Ping-coming-soon-page-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Ping-coming-soon-page-master/
+
+6) Huddle-landing-page-with-alternating-feature-blocks-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Huddle-landing-page-with-alternating-feature-blocks-master/
