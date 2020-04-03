@@ -12,3 +12,5 @@
 6) Huddle-landing-page-with-alternating-feature-blocks-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Huddle-landing-page-with-alternating-feature-blocks-master/
 
 7) Huddle-landing-page-with-single-introductory-section-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Huddle-landing-page-with-single-introductory-section-master/
+
+8) Fylo-landing-page-with-two-column-layout-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-landing-page-with-two-column-layout-master/
