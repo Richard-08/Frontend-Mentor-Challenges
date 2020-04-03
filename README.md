@@ -14,3 +14,5 @@
 7) Huddle-landing-page-with-single-introductory-section-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Huddle-landing-page-with-single-introductory-section-master/
 
 8) Fylo-landing-page-with-two-column-layout-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-landing-page-with-two-column-layout-master/
+
+9) Social-media-dashboard-with-theme-switcher-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Social-media-dashboard-with-theme-switcher-master/
