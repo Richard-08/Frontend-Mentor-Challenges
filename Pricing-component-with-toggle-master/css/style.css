@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+/* ## Colors */
+
+/* ### Primary */
+:root {
+  --Linear-Gradient: linear-gradient(
+    90deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+}
+
+/* ### Neutral */
+:root {
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+/* ////////////////////// Main ////////////////////// */
+
+.container {
+  max-width: 100%;
+  width: 1050px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 70px 20px;
+}
+
+.main {
+  background-color: hsl(240, 100%, 98%);
+  position: relative;
+  z-index: 1;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("../images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: 100%;
+  height: 100%;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: 100%;
+}
+
+.main-title {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.main-title h1 {
+  color: var(--Grayish-Blue);
+  margin-bottom: 40px;
+}
+
+/* //////////////////// Toggle ////////////////// */
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  color: var(--Light-Grayish-Blue);
+  font-weight: 700;
+}
+
+.toggle {
+  width: 55px;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+  background-image: var(--Linear-Gradient);
+  cursor: pointer;
+  margin: 0 25px 0 25px;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+
+  transition: all 0.5s ease;
+}
+.main.month .toggle {
+  opacity: 0.5;
+}
+
+.main.month .toggle::after {
+  left: 27px;
+}
+
+/* ////////////////////////// Cards ///////////////////// */
+
+.price-cards {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 350px;
+  padding: 35px 30px;
+  background-color: #ffffff;
+  color: var(--Grayish-Blue);
+  border-radius: 10px 0 0 10px;
+}
+
+.card:nth-child(3) {
+  border-radius: 0 10px 10px 0;
+}
+
+.card h4 {
+  margin-bottom: 40px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 40px;
+}
+
+.price {
+  font-size: 65px;
+}
+
+.dollar {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.price.monthly {
+  display: none;
+}
+
+.main.month .price.monthly {
+  display: block;
+}
+
+.main.month .price.annually {
+  display: none;
+}
+
+.options-list {
+  font-size: 15px;
+  color: var(--Grayish-Blue);
+}
+
+.options-list li {
+  padding: 20px 0;
+  border-top: 1px solid var(--Light-Grayish-Blue);
+}
+
+.options-list li:last-child {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  color: #fff;
+  background-image: var(--Linear-Gradient);
+}
+
+.btn:hover {
+  background-image: none;
+  background-color: transparent;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+
+.card-bigger {
+  color: #fff;
+  background-image: var(--Linear-Gradient);
+  border-radius: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.card-bigger .options-list,
+.card-bigger .prices {
+  color: #fff;
+}
+
+.card-bigger .btn {
+  background-image: none;
+  background-color: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+.card-bigger .btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+/* /////////////////// Media Queries //////////////// */
+
+@media screen and (max-width: 1080px) {
+  .price-cards {
+    flex-direction: column;
+  }
+
+  .card,
+  .card:nth-child(3) {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .card-bigger {
+    padding: 35px 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 300px;
+  }
+}

@@ -18,3 +18,5 @@
 9) Social-media-dashboard-with-theme-switcher-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Social-media-dashboard-with-theme-switcher-master/index.html
 
 10) Insure-landing-page-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Insure-landing-page-master/
+
+11) Pricing-component-with-toggle-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Pricing-component-with-toggle-master/
