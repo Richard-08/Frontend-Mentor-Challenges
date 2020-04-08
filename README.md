@@ -22,3 +22,6 @@
 11) Pricing-component-with-toggle-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Pricing-component-with-toggle-master/
 
 12) Project-tracking-intro-component-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Project-tracking-intro-component-master/
+
+13) Сlipboard-landing-page-master - https://richard-08.github.io/Frontend-Mentor-Challenges/Сlipboard-landing-page-master/
+
