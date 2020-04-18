@@ -133,10 +133,12 @@ jobListing.addEventListener('click', event => {
   event.preventDefault();
 
   if (event.target.dataset.role || event.target.dataset.level || event.target.dataset.languages || event.target.dataset.tools) {
-    addFilter(event.target.textContent);
 
-    filters.push(event.target.textContent);
-    filterListing(filters, dataObj);
+    if (!filters.includes(event.target.textContent)) {
+      addFilter(event.target.textContent);
+      filters.push(event.target.textContent);
+      filterListing(filters, dataObj);
+    }
   }
 });
 
