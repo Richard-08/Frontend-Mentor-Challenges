@@ -23,3 +23,4 @@
 ### Difficulty: INTERMEDIATE :cowboy_hat_face:
 
 15. [Static-job-listings-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Static-job-listings-master/)
+16. [Easybank-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Easybank-landing-page-master/)

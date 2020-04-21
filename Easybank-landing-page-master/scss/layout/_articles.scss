@@ -1,0 +1,61 @@
+.articles {
+  padding: 95px 0 80px 0;
+  background-color: $Very-Light-Gray;
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 55px;
+
+    @include media(1060px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+    }
+
+    @include media(768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .article {
+    border-radius: 5px;
+    background-color: $White;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__img {
+      width: 100%;
+      height: 200px;
+    }
+
+    &__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__text {
+      padding: 30px 25px;
+    }
+
+    &__text span {
+      font-size: 10px;
+      color: $Grayish-Blue;
+    }
+
+    &__text h4 {
+      font-size: 16px;
+      margin: 15px 0;
+    }
+
+    &__text p {
+      line-height: 1.5;
+      font-size: 12.5px;
+    }
+  }
+
+  .article:hover h4 {
+    color: $Lime-Green;
+  }
+}

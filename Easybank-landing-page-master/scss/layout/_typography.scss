@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  color: $Dark-Blue;
+}
+
+h1 {
+  font-size: 55px;
+
+  @include media(600px) {
+      font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+
+  @include media(768px) {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+  color: $Grayish-Blue;
+  line-height: 1.7;
+}

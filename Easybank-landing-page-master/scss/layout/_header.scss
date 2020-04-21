@@ -1,0 +1,82 @@
+.header {
+  background-color: $Very-Light-Gray;
+  background-image: url("../../images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 43vw -16rem;
+  background-size: auto;
+  overflow-x: hidden;
+
+  @include media(768px) {
+    background-image: url('../../images/bg-intro-mobile.svg');
+    background-position: center -15rem;
+    background-size: cover;
+  }
+
+  @include media(600px) {
+    background-position: center -5rem;
+    background-size: 100%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15rem 0;
+
+    @include media(1060px) {
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    @include media(768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__content-text {
+    flex: 1 0 40%;
+
+    @include media(1060px) {
+      flex: 1;
+    }
+
+    @include media(768px) {
+      text-align: center;
+    }
+  }
+
+  &__content-text > * {
+    margin-bottom: 30px;
+  }
+
+  &__content-img {
+    flex: 0 1 50%;
+    margin-top: -22rem;
+    margin-right: -10rem;
+    align-self: flex-end;
+
+    @include media(1060px) {
+      flex: 1;
+      margin-right: 0;
+      margin-top: -5rem;
+    }
+
+    @include media(768px) {
+      margin-top: -19rem;
+    }
+
+    @include media(600px) {
+      margin-top: -10rem;
+    }
+  }
+  
+
+  &__content-img img {
+    max-width: 93rem;
+    margin-left: 12rem;
+
+    @include media(1060px) {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+}
