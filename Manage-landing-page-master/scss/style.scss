@@ -1,0 +1,64 @@
+@import "./helpers/mixins.scss";
+@import "./helpers/vars.scss";
+@import "./layout/typography.scss";
+@import "./layout/navigation.scss";
+@import "./layout/header.scss";
+@import "./layout/features.scss";
+@import "./layout/testimonial.scss";
+@import "./layout/cta.scss";
+@import "./layout/footer.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+/* font-family: 'Be Vietnam', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+body {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
+}
+
+/** 
+* * --------------------------General------------------------------- 
+*/
+
+.container {
+  max-width: 100%;
+  width: 1115px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  @include size(140px, 45px);
+  background-color: $Bright-Red;
+  color: $Vary-Light-Gray;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 25px;
+  box-shadow: 0px 15px 7px -8px hsla(12, 88%, 59%, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  box-shadow: 0px 20px 5px -10px hsla(12, 88%, 59%, 0.4);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 15px 7px -8px hsla(12, 88%, 59%, 0.4);
+}
+
+img {
+  max-width: 100%;
+}

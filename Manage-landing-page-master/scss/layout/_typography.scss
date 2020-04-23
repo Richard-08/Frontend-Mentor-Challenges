@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4 {
+  color: $Dark-Blue;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 55px;
+
+  @include media(600px) {
+      font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 35px;
+  @include media(768px) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+  color: $Dark-Grayish-Blue;
+  line-height: 1.7;
+}

@@ -1,0 +1,166 @@
+.footer {
+  background-color: $Very-Dark-Blue;
+  padding: 60px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "socials nav form"
+      "socials nav copyright";
+
+    @include media(877px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "form"
+        "nav"
+        "socials"
+        "copyright";
+      row-gap: 60px;
+    }
+  }
+
+  .footer-social {
+    grid-area: socials;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include media(877px) {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+    @include media(768px) {
+    }
+
+    &__logo {
+      @include media(877px) {
+        margin-top: 55px;
+      }
+    }
+
+    &__links a {
+      margin-right: 10px;
+
+      @include media(877px) {
+        margin-right: 30px;
+      }
+    }
+
+    &__links a:last-child {
+      margin-right: 0;
+    }
+
+    &__icon {
+      fill: #fff;
+    }
+
+    &__icon:hover {
+      fill: $Bright-Red;
+    }
+  }
+
+  .footer-nav {
+    grid-area: nav;
+    column-count: 2;
+    column-gap: 130px;
+
+    @include media(1024px) {
+      column-gap: 10px;
+    }
+
+    @include media(877px) {
+      margin: 0 auto;
+      column-gap: 80px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+
+    &__link {
+      color: $Vary-Light-Gray;
+      font-size: 15px;
+    }
+
+    &__link:hover {
+      color: $Bright-Red;
+    }
+  }
+
+  .footer-form {
+    grid-area: form;
+    justify-self: end;
+
+    @include media(877px) {
+      margin: 0 auto;
+    }
+  }
+
+  .footer-copyright {
+    grid-area: copyright;
+    justify-self: end;
+    align-self: flex-end;
+
+    @include media(877px) {
+      margin: 0 auto;
+    }
+  }
+
+  .footer-copyright span {
+    font-size: 12px;
+    color: $Dark-Grayish-Blue;
+
+    @include media(768px) {
+    }
+  }
+
+  /* --------Form-------- */
+
+  &__btn.btn {
+    width: 65px;
+    box-shadow: none;
+  }
+
+  &__btn.btn:hover {
+    background-color: hsl(12, 88%, 70%);
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
+  }
+
+  &__input {
+    @include size(200px, 45px);
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 12px;
+    margin-right: 10px;
+
+    @include media(877px) {
+      @include size(240px, 45px);
+    }
+  }
+
+  &__error {
+    display: none;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+    padding: 5px 15px;
+  }
+
+  /* Input validation email*/
+
+  .form.error &__input {
+    border: 1px solid red;
+  }
+
+  .form.error &__error {
+    display: block;
+  }
+}

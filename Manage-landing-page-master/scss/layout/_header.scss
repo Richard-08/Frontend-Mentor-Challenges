@@ -1,0 +1,53 @@
+.header {
+  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 770px -12rem;
+
+  @include media(1024px) {
+    background-position: 550px -12rem;
+  }
+
+  @include media(768px) {
+    background-position: 50px -12rem;
+    margin-bottom: -270px;
+  }
+
+  @include media(500px) {
+    background-position: 50px -10rem;
+    background-size: 600px 600px;
+  }
+
+  .header-content {
+    @include flexbox(center);
+    padding: 75px 0;
+
+    @include media(768px) {
+      flex-direction: column-reverse;
+    }
+
+    &__text {
+      flex: 1;
+
+      @include media(768px) {
+        text-align: center;
+      }
+    }
+
+    &__text p {
+      max-width: 340px;
+
+      @include media(768px) {
+        max-width: 100%;
+      }
+    }
+
+    &__text * {
+      margin-bottom: 35px;
+    }
+
+    &__intro {
+      flex: 1;
+    }
+  }
+}

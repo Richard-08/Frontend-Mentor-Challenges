@@ -1,0 +1,39 @@
+.cta {
+  padding: 65px 0;
+  background-color: $Bright-Red;
+  background-image: url("../../images/bg-simplify-section-desktop.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 230px -150px;
+
+  @include media(768px) {
+    background-image: url("../../images/bg-simplify-section-mobile.svg");
+    background-position: left center;
+    background-size: 80px 250px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    max-width: 440px;
+    color: $Vary-Light-Gray;
+
+    @include media(768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn.btn {
+    background-color: $Vary-Light-Gray;
+    color: $Bright-Red;
+  }
+}
