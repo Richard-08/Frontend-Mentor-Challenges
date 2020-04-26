@@ -362,6 +362,8 @@ p {
 }
 
 .shortener {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   background-color: #eff0f5;
   padding-top: 1px;
   padding-bottom: 60px;
@@ -376,6 +378,7 @@ p {
   background-position: center center;
   background-color: #3b3054;
   border-radius: 10px;
+  position: relative;
   /* transform: translateY(-82px); */
   margin-top: -82px;
   margin-bottom: 25px;
@@ -457,6 +460,10 @@ p {
   background-color: #fff;
   border-radius: 5px;
   font-weight: 500;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-animation: uprise 0.5s linear;
+          animation: uprise 0.5s linear;
 }
 
 @media screen and (max-width: 768px) {
@@ -469,6 +476,32 @@ p {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0;
+  }
+}
+
+@-webkit-keyframes uprise {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes uprise {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -522,6 +555,42 @@ p {
     margin-left: 0;
     margin-bottom: 15px;
   }
+}
+
+.shortener .shortener-list .copy-btn.copied {
+  background-color: #3b3054;
+}
+
+.form.error .url {
+  border: 2px solid #f46262;
+  color: #f46262;
+}
+
+@media screen and (max-width: 768px) {
+  .form.error .url {
+    margin-bottom: 35px;
+  }
+}
+
+.notice {
+  display: none;
+  color: #f46262;
+  font-size: 14px;
+  font-style: italic;
+  position: absolute;
+  top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .notice {
+    top: 70px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.form.error .notice {
+  display: block;
 }
 
 .features {
@@ -752,6 +821,10 @@ body {
   font-weight: 700;
   color: #fff;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #56dcdc;
 }
 
 img {

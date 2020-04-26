@@ -44,6 +44,10 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: hsl(180, 66%, 60%);
+}
+
 img {
   max-width: 100%;
 }

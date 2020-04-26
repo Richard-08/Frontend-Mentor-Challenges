@@ -1,4 +1,5 @@
 .shortener {
+  transition: all 0.5s ease;
   background-color: hsl(230, 25%, 95%);
   padding-top: 1px;
   padding-bottom: 60px;
@@ -11,6 +12,7 @@
     background-position: center center;
     background-color: $Dark-Violet;
     border-radius: 10px;
+    position: relative;
 
     /* transform: translateY(-82px); */
     margin-top: -82px;
@@ -73,10 +75,25 @@
       border-radius: 5px;
       font-weight: 500;
 
+      transition: all 0.2s ease;
+      animation: uprise 0.5s linear;
+
       @include media(768px) {
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
+      }
+    }
+
+    @keyframes uprise {
+      0% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
 
@@ -88,7 +105,6 @@
       }
     }
     .shortened-url {
-      
       @include media(768px) {
         width: 100%;
         display: flex;
@@ -115,5 +131,35 @@
         margin-bottom: 15px;
       }
     }
+
+    .copy-btn.copied{
+      background-color: $Dark-Violet;
+    }
   }
+}
+
+.form.error .url {
+  border: 2px solid $Red;
+  color: $Red;
+  @include media(768px) {
+    margin-bottom: 35px;
+  }
+}
+
+.notice {
+  display: none;
+  color: $Red;
+  font-size: 14px;
+  font-style: italic;
+  position: absolute;
+  top: 120px;
+
+  @include media(768px) {
+    top: 70px;
+    align-self: flex-start;
+  }
+}
+
+.form.error .notice {
+  display: block;
 }
