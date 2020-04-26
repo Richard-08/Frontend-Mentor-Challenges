@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4 {
+  color: $Very-Dark-Blue;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 5rem;
+
+  @include media(967px) {
+    font-size: 3.5rem;
+  }
+
+  @include media(520px) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 40px;
+
+  @include media(768px) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+  line-height: 1.7;
+  font-weight: 500;
+  color: $Grayish-Violet;
+}

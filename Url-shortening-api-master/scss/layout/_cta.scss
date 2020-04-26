@@ -1,0 +1,19 @@
+.cta {
+  background-image: url("../../images/bg-boost-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  background-color: $Dark-Violet;
+  text-align: center;
+  padding: 70px 10px 50px 10px;
+
+  .cta-btn {
+    font-size: 18px;
+    @include size(200px, 55px);
+    border-radius: 30px;
+    margin-top: 25px;
+  }
+
+  h2 {
+    color: #fff;
+  }
+}

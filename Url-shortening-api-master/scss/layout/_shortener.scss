@@ -1,0 +1,119 @@
+.shortener {
+  background-color: hsl(230, 25%, 95%);
+  padding-top: 1px;
+  padding-bottom: 60px;
+
+  .shortener-form {
+    width: 100%;
+    padding: 50px 65px;
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-position: center center;
+    background-color: $Dark-Violet;
+    border-radius: 10px;
+
+    /* transform: translateY(-82px); */
+    margin-top: -82px;
+    margin-bottom: 25px;
+
+    @include media(768px) {
+      padding: 25px;
+    }
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(768px) {
+      flex-direction: column;
+    }
+
+    .url {
+      width: 78%;
+      height: 65px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $Dark-Violet;
+      padding: 0 32px;
+
+      @include media(768px) {
+        width: 100%;
+        height: 45px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        font-size: 16px;
+      }
+    }
+
+    .shorten-btn {
+      width: 19%;
+      height: 65px;
+      border-radius: 10px;
+      font-size: 18px;
+
+      @include media(768px) {
+        height: 45px;
+        width: 100%;
+      }
+    }
+  }
+
+  /* -------------Shortener List---------------- */
+
+  .shortener-list {
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding: 15px 30px 15px 35px;
+      background-color: #fff;
+      border-radius: 5px;
+      font-weight: 500;
+
+      @include media(768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+      }
+    }
+
+    .link {
+      color: $Very-Dark-Violet;
+
+      @include media(768px) {
+        padding: 15px;
+      }
+    }
+    .shortened-url {
+      
+      @include media(768px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid $Gray;
+      }
+    }
+    .short-link {
+      color: $Cyan;
+
+      @include media(768px) {
+        padding: 15px;
+      }
+    }
+    .copy-btn {
+      @include size(100px, 40px);
+      border-radius: 5px;
+      margin-left: 25px;
+
+      @include media(768px) {
+        width: 91%;
+        align-self: center;
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

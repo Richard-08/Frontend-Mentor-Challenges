@@ -1,0 +1,60 @@
+.footer {
+  background-color: $Very-Dark-Violet;
+  padding: 70px 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    grid-gap: 30px;
+
+    @include media(768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+  }
+
+  .footer-nav {
+    &__item {
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      font-size: 16px;
+      color: $Gray;
+    }
+
+    &__link:hover {
+      color: $Cyan;
+    }
+  }
+
+  .footer-socials {
+    &__link {
+    }
+
+    &__link:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &__icon {
+      fill: #fff;
+    }
+
+    &__icon:hover {
+      fill: $Cyan;
+    }
+  }
+}

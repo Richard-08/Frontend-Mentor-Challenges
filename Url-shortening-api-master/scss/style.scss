@@ -1,0 +1,49 @@
+@import "./helpers/mixins.scss";
+@import "./helpers/vars.scss";
+@import "./layout/typography.scss";
+@import "./layout/navigation.scss";
+@import "./layout/header.scss";
+@import "./layout/shortener.scss";
+@import "./layout/features.scss";
+@import "./layout/cta.scss";
+@import "./layout/footer.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+/** 
+* * --------------------------General------------------------------- 
+*/
+
+.container {
+  max-width: 100%;
+  width: 1135px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  background-color: $Cyan;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}

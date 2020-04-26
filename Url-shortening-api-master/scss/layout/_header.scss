@@ -1,0 +1,55 @@
+.header {
+  padding: 25px 0 150px 0;
+  overflow: hidden;
+  .header-content {
+    display: flex;
+    align-items: center;
+
+    @include media(768px) {
+      flex-direction: column-reverse;
+    }
+
+    &__text {
+      flex: 1;
+
+      @include media(768px) {
+        text-align: center;
+      }
+    }
+
+    &__text p {
+      font-size: 20px;
+      max-width: 530px;
+      margin: 25px 0 40px 0;
+
+      @include media(768px) {
+        max-width: 100%;
+      }
+    }
+
+    &__intro {
+      flex: 1;
+      margin-right: -280px;
+    }
+
+    &__intro img {
+      max-width: 740px;
+      margin-left: 40px;
+
+      @include media(1125px) {
+        margin-left: 0;
+      }
+
+      @include media(768px) {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .cta-btn {
+      font-size: 18px;
+      @include size(200px, 55px);
+      border-radius: 30px;
+    }
+  }
+}
