@@ -1,0 +1,77 @@
+@import "./helpers/mixins.scss";
+@import "./helpers/vars.scss";
+@import "./layout/typography.scss";
+@import "./layout/navigation.scss";
+@import "./layout/header.scss";
+@import "./layout/features.scss";
+@import "./layout/extensions.scss";
+@import "./layout/FAQ.scss";
+@import "./layout/cta.scss";
+@import "./layout/footer.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+/** 
+* * --------------------------General------------------------------- 
+*/
+
+.container {
+  max-width: 100%;
+  width: 1135px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn.red {
+  @include size(110px, 40px);
+  background-color: $Soft-Red;
+  border: 2px solid $Soft-Red;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.btn.red:hover {
+  color: $Soft-Red;
+}
+
+.btn.blue {
+  background-color: $Soft-Blue;
+  border: 2px solid $Soft-Blue;
+  color: #fff;
+}
+
+.btn.blue:hover {
+  color: $Soft-Blue;
+}
+
+.btn {
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}

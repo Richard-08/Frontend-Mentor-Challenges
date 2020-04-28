@@ -1,0 +1,162 @@
+.nav {
+  transition: 0.3s ease-in;
+
+  .mobile-logo {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    @include media(768px) {
+    }
+  }
+
+  &__logo {
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 45px;
+    overflow: hidden;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item:hover {
+  }
+
+  &__link {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $Very-Dark-Blue;
+    transition: all 0.2s ease;
+
+    @include media(768px) {
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  &__link:hover {
+    color: $Soft-Red;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  .nav-social {
+    display: none;
+
+    &__link:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  /* ------------------Humburger menu------------------ */
+
+  &__burger {
+    @include media(768px) {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .close {
+      display: none;
+    }
+  }
+
+  &__burger.open {
+    .burger {
+      display: none;
+    }
+
+    .close {
+      display: block;
+    }
+  }
+
+  &__btn.btn.red {
+    @include media(768px) {
+      font-size: 16px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      margin: 25px 0;
+    }
+
+    @include media(400px) {
+      width: 100%;
+    }
+  }
+
+  &__items {
+    @include media(768px) {
+      width: 100%;
+      height: 100%;
+      background-color: hsla(229, 31%, 21%, 0.9);
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 125px;
+      transform: translateY(-180%) translateX(180%) scale(0);
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s ease-in;
+      z-index: 10;
+    }
+  }
+
+  &__items.show {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+
+  &__item {
+    @include media(768px) {
+      width: 100%;
+      margin-right: 0;
+      padding: 25px 0;
+      border-top: 1px solid $Grayish-Blue;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @include media(768px) {
+      border-bottom: 1px solid $Grayish-Blue;
+    }
+  }
+}
+
+.nav.show {
+  background-color: hsla(229, 31%, 21%, 0.9);
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .nav-social {
+    display: block;
+    margin: auto;
+  }
+}
+
+@include media(768px) {
+  body.lock {
+    overflow: hidden;
+  }
+}

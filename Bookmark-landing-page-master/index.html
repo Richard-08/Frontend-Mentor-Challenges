@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="scss/style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+</head>
+
+<body>
+
+  <!-- --------------------------------------Navigation----------------------------------- -->
+
+  <nav class="nav">
+
+    <div class="container">
+
+      <div class="nav__content">
+        <div class="nav__logo">
+          <img src="images/logo-bookmark.svg" alt="logo" class="desktop-logo">
+          <img src="images/logo-bookmark-ft.svg" alt="logo" class="mobile-logo">
+        </div>
+
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <button class="nav__btn btn red">LOGIN</button>
+
+          <div class="nav-social">
+            <a href="https://www.facebook.com/" class="nav-social__link"><img src="images/icon-facebook.svg" alt=""></a>
+            <a href="https://twitter.com/" class="nav-social__link"><img src="images/icon-twitter.svg" alt=""></a>
+          </div>
+        </ul>
+
+
+
+        <div class="nav__burger">
+          <img class="burger" src="images/icon-hamburger.svg" alt="hamburger">
+          <img class="close" src="images/icon-close.svg" alt="close">
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- ---------------------------------------------------Header---------------------------------------------- -->
+
+  <header class="header">
+
+    <div class="container">
+
+      <div class="header-content">
+
+        <div class="header-content__text">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <button class="header__btn btn blue">Get it on Chrome</button>
+          <button class="header__btn btn gray">Get it on Firefox</button>
+        </div>
+
+        <div class="header-content__img">
+          <img src="images/illustration-hero.svg" alt="illustration-hero">
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ---------------------------------------------------Features-------------------------------------------------- -->
+
+  <div class="features">
+
+    <div class="container">
+
+      <div class="features__title">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+
+
+      <div class="feature-box">
+
+        <!-- ------------------Tabs------------------- -->
+
+        <div class="tabs">
+
+          <div class="tab-item active" data-id="1">
+            <h4>Simple Bookmarking</h4>
+          </div>
+
+          <div class="tab-item" data-id="2">
+            <h4>Speedy Searching</h4>
+          </div>
+
+          <div class="tab-item" data-id="3">
+            <h4>Easy Sharing</h4>
+          </div>
+
+        </div>
+
+        <!-- ------------------Tabs Content------------------- -->
+
+        <div class="tabs-content">
+
+          <div class="tab-content-item tab-1-content active">
+            <div class="tab-content-item__img">
+              <img src="images/illustration-features-tab-1.svg" alt="illustration-feature">
+            </div>
+            <div class="tab-content-item__text">
+              <h2>Bookmark in one click</h2>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.</p>
+              <button class="tab-btn btn blue">More Info</button>
+            </div>
+          </div>
+
+          <div class="tab-content-item tab-2-content">
+            <div class="tab-content-item__img">
+              <img src="images/illustration-features-tab-2.svg" alt="illustration-feature">
+            </div>
+            <div class="tab-content-item__text">
+              <h2>Intelligent search</h2>
+              <p>Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.</p>
+              <button class="tab-btn btn blue">More Info</button>
+            </div>
+          </div>
+
+          <div class="tab-content-item tab-3-content">
+            <div class="tab-content-item__img">
+              <img src="images/illustration-features-tab-3.svg" alt="illustration-feature">
+            </div>
+            <div class="tab-content-item__text">
+              <h2>Share your bookmarks</h2>
+              <p>Easily share your bookmarks and collections with others. Create a shareable
+                link that you can send at the click of a button.</p>
+              <button class="tab-btn btn blue">More Info</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ---------------------------------------------------Extensions-------------------------------------------------- -->
+
+  <div class="extensions">
+
+    <div class="container">
+
+      <div class="extensions__title">
+        <h2>Download the extension</h2>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+
+      <div class="extensions-box">
+
+        <div class="extension extension-1">
+          <img src="images/logo-chrome.svg" alt="logo-chrome">
+
+          <div class="extension__text">
+            <h4>Add to Chrome</h4>
+            <p>Minimum version 62</p>
+          </div>
+
+          <button class="extension__btn btn blue">Add & Install Extension</button>
+        </div>
+
+        <div class="extension extension-2">
+          <img src="images/logo-firefox.svg" alt="logo-firefox">
+
+          <div class="extension__text">
+            <h4>Add to Firefox</h4>
+            <p>Minimum version 55</p>
+          </div>
+
+          <button class="extension__btn btn blue">Add & Install Extension</button>
+        </div>
+
+        <div class="extension extension-3">
+          <img src="images/logo-opera.svg" alt="logo-opera">
+
+          <div class="extension__text">
+            <h4>Add to Opera</h4>
+            <p>Minimum version 46</p>
+          </div>
+
+          <button class="extension__btn btn blue">Add & Install Extension</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ---------------------------------------------------FAQ-------------------------------------------------- -->
+
+  <div class="FAQ">
+
+    <div class="container">
+
+      <div class="FAQ__title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.</p>
+      </div>
+
+      <div class="FAQ-box">
+
+        <!-- Question 1 -->
+        <div class="FAQ-box__item">
+          <div class="FAQ-box__title">
+            <h4>What is Bookmark?</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
+              <path stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+          </div>
+
+          <div class="FAQ-box__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="FAQ-box__item">
+          <div class="FAQ-box__title">
+            <h4>How can I request a new browser?</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
+              <path stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+          </div>
+
+          <div class="FAQ-box__text">
+            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="FAQ-box__item">
+          <div class="FAQ-box__title">
+            <h4>Is there a mobile app?</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
+              <path stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+          </div>
+
+          <div class="FAQ-box__text">
+            <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="FAQ-box__item">
+          <div class="FAQ-box__title">
+            <h4>What about other Chromium browsers?</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
+              <path stroke-width="3" d="M1 1l8 8 8-8" /></svg>
+          </div>
+
+          <div class="FAQ-box__text">
+            <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="FAQ__btn btn blue">More Info</button>
+
+    </div>
+
+  </div>
+
+  <!-- ---------------------------------------------------Call To Action-------------------------------------------------- -->
+
+  <div class="cta">
+
+    <div class="container">
+
+      <div class="cta__title">
+        <span>35,000+ already joined</span>
+        <h2>Stay up-to-date with what we’re doing</h2>
+      </div>
+
+      <form class="form">
+
+        <div class="form-elements">
+          <input type="email" class="email" placeholder="Enter your email address">
+          <button class="cta__btn btn red">Contact Us</button>
+        </div>
+
+        <img src="images/icon-error.svg" alt="error" class="error-icon">
+        <span class="error-notice">Whoops, make sure it's an email</span>
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- ---------------------------------------------------Footer-------------------------------------------------- -->
+
+  <div class="footer">
+
+    <div class="container">
+
+      <div class="footer-nav">
+
+        <div class="footer__logo">
+          <img src="images/logo-bookmark-ft.svg" alt="logo">
+        </div>
+
+        <ul class="footer-items">
+          <li class="footer__item"><a href="" class="footer__link">Features</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Pricing</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            class="footer-social__link">
+            <path fill-rule="evenodd"
+              d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+          </svg></a>
+        <a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
+            class="footer-social__link">
+            <path fill-rule="evenodd"
+              d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+          </svg></a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

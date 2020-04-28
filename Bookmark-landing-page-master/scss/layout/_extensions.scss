@@ -1,0 +1,71 @@
+.extensions {
+  padding-bottom: 120px;
+
+  &__title {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      margin-bottom: 25px;
+
+      @include media(768px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .extensions-box {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+    justify-content: center;
+
+    @include media(768px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  .extension {
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.05);
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin-left: -25px;
+      margin-right: -25px;
+      width: calc(100% + 25);
+
+      background-image: url("../../images/bg-dots.svg");
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      padding-bottom: 30px;
+
+      p {
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+
+    &__btn {
+      @include size(100%, 45px);
+      margin-top: 25px;
+      padding: 0 35px;
+    }
+  }
+
+  .extension-2 {
+    transform: translateY(40px);
+  }
+
+  .extension-3 {
+    transform: translateY(80px);
+  }
+}

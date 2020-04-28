@@ -1,0 +1,108 @@
+.header {
+  padding: 75px 0px 30px 0;
+  position: relative;
+
+  @include media(768px) {
+    padding-top: 30px;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+
+    @include media(768px) {
+      flex-direction: column-reverse;
+    }
+
+    &__text {
+      flex: 1;
+
+      @include media(768px) {
+        margin-top: 50px;
+        text-align: center;
+      }
+    }
+
+    &__text p {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      flex: 1;
+      margin-right: -110px;
+
+      @include media(1180px) {
+        margin-right: 0;
+      }
+
+      img {
+        margin-left: 20px;
+        max-width: 650px;
+
+        @include media(1180px) {
+          margin-left: 0;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    @include size(165px, 45px);
+  }
+
+  .gray {
+    border: 2px solid #f7f7f7;
+    background-color: #f7f7f7;
+    color: $Grayish-Blue;
+    margin-left: 15px;
+
+    @include media(390px) {
+      margin-left: 0;
+      display: block;
+      margin: 0 auto;
+      margin-top: 15px;
+    }
+  }
+
+  .gray:hover {
+    border: 2px solid $Grayish-Blue;
+  }
+}
+
+.header::after {
+  content: "";
+  @include size(36%, 62%);
+  background-color: $Soft-Blue;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 0 0 0 180px;
+
+  @include media(768px) {
+    width: 80%;
+    height: 40%;
+    bottom: 40%;
+  }
+
+  @include media(650px) {
+    height: 35%;
+    bottom: 45%;
+  }
+
+  @include media(530px) {
+    width: 80%;
+    height: 25%;
+    bottom: 60%;
+    border-radius: 0 0 0 80px;
+  }
+
+  @include media(375px) {
+    width: 80%;
+    height: 25%;
+    bottom: 65%;
+    border-radius: 0 0 0 80px;
+  }
+}

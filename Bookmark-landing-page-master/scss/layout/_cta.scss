@@ -1,0 +1,114 @@
+.cta {
+  background-color: $Soft-Blue;
+  padding: 70px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    color: #fff;
+
+    h2 {
+      color: #fff;
+      margin: 45px 0;
+    }
+
+    span {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .form {
+    position: relative;
+
+    @include media(500px) {
+      width: 100%;
+    }
+
+    .form-elements {
+      display: flex;
+      justify-content: space-between;
+
+      @include media(500px) {
+        flex-direction: column;
+      }
+    }
+  }
+  .email {
+    @include size(300px, 48px);
+    border-radius: 5px;
+    margin-right: 30px;
+    padding: 0 20px;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+
+    @include media(500px) {
+      width: 100%;
+    }
+  }
+
+  &__btn.btn.red {
+    @include size(125px, 48px);
+    font-size: 14px;
+
+    @include media(500px) {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  .error-icon {
+    display: none;
+    position: absolute;
+    right: 175px;
+    top: 0;
+    translate: 50% 50%;
+    z-index: 2;
+
+    @include media(500px) {
+      right: 5%;
+    }
+  }
+
+  .error-notice {
+    display: none;
+    position: absolute;
+    bottom: -21px;
+    width: 300px;
+    padding: 5px 20px;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    background-color: $Soft-Red;
+
+    @include media(500px) {
+      width: 100%;
+      bottom: 84px;
+    }
+  }
+
+  .form.error {
+    .email {
+      border: 2px solid $Soft-Red;
+      margin-bottom: 40px;
+    }
+
+    .error-notice {
+      display: block;
+    }
+
+    .error-icon {
+      display: block;
+    }
+  }
+}

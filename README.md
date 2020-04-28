@@ -26,3 +26,4 @@
 16. [Easybank-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Easybank-landing-page-master/)
 17. [Manage-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Manage-landing-page-master/)
 18. [Url-shortening-api-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Url-shortening-api-master/)
+19. [Bookmark-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Bookmark-landing-page-master/)
