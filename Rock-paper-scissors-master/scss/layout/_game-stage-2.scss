@@ -1,0 +1,139 @@
+.game-stage-2 {
+  display: none;
+  margin-bottom: 50px;
+
+  .container {
+    max-width: 100%;
+    width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(880px) {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "player house"
+        "result result";
+
+      .player-pick {
+        grid-area: player;
+      }
+
+      .house-pick {
+        grid-area: house;
+      }
+
+      .game-result {
+        grid-area: result;
+      }
+    }
+  }
+
+  .player-pick,
+  .house-pick {
+    text-align: center;
+
+    @include media(520px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h3 {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 65px;
+
+      @include media(520px) {
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .player-pick.win .wrapper {
+    box-shadow: 0px 0px 0px 65px rgba($color: #ffffff, $alpha: 0.04),
+      0px 0px 0px 130px rgba($color: #ffffff, $alpha: 0.03),
+      0px 0px 0px 215px rgba($color: #ffffff, $alpha: 0.025);
+
+    @include media(768px) {
+      box-shadow: 0px 0px 0px 15px rgba($color: #ffffff, $alpha: 0.04),
+        0px 0px 0px 40px rgba($color: #ffffff, $alpha: 0.03),
+        0px 0px 0px 75px rgba($color: #ffffff, $alpha: 0.025);
+    }
+  }
+
+  .house-pick.win .wrapper {
+    box-shadow: 0px 0px 0px 65px rgba($color: #ffffff, $alpha: 0.04),
+      0px 0px 0px 130px rgba($color: #ffffff, $alpha: 0.03),
+      0px 0px 0px 215px rgba($color: #ffffff, $alpha: 0.025);
+
+    @include media(768px) {
+      box-shadow: 0px 0px 0px 15px rgba($color: #ffffff, $alpha: 0.04),
+        0px 0px 0px 40px rgba($color: #ffffff, $alpha: 0.03),
+        0px 0px 0px 75px rgba($color: #ffffff, $alpha: 0.025);
+    }
+  }
+
+  .wrapper {
+    @include size(295px);
+
+    @include media(768px) {
+      @include size(200px);
+    }
+
+    @include media(520px) {
+      @include size(130px);
+    }
+
+    .game-item {
+      @include size(225px);
+
+      @include media(768px) {
+        @include size(155px);
+      }
+
+      @include media(520px) {
+        @include size(100px);
+      }
+    }
+  }
+
+  .game-result {
+    text-align: center;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 40px;
+      margin-top: 65px;
+
+      @include media(880px) {
+        font-size: 60px;
+      }
+    }
+
+    .play-btn {
+      background-color: #fff;
+      @include size(220px, 48px);
+      border-radius: 10px;
+      text-transform: uppercase;
+      color: hsl(348, 56%, 49%);
+      margin-top: 25px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .play-btn:hover {
+      box-shadow: 0px 0px 0px 8px rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
+}
+
+.game-stage-2.active {
+  display: block;
+}

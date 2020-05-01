@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="scss/style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <div class="game">
+
+    <header class="header">
+
+      <div class="container">
+
+        <div class="game-info">
+
+          <div class="game-info__title">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+
+          <div class="game-info__score">
+            <span>Score</span>
+            <h1 class="score">0</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <div class="game-playground">
+
+      <!-- Stage 1 -->
+      <div class="game-stage-1">
+
+        <div class="container">
+
+          <div class="game-item-1 wrapper paper" data-item="paper">
+            <div class="game-item">
+              <img src="images/icon-paper.svg" alt="paper">
+            </div>
+          </div>
+
+          <div class="game-item-2 wrapper scissors" data-item="scissors">
+            <div class="game-item">
+              <img src="images/icon-scissors.svg" alt="scissors">
+            </div>
+          </div>
+
+          <div class="game-item-3 wrapper rock" data-item="rock">
+            <div class="game-item">
+              <img src="images/icon-rock.svg" alt="rock">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="game-stage-2">
+
+        <div class="container">
+
+          <div class="player-pick">
+            <h3>You Picked</h3>
+
+            <div class="wrapper">
+              <div class="game-item player-picked">
+                <!-- <img src="images/icon-scissors.svg" alt="scissors"> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="game-result">
+            <h2 class="result"></h2>
+            <button class="play-btn">Play Again</button>
+          </div>
+
+          <div class="house-pick">
+            <h3>The House Picked</h3>
+
+            <div class="wrapper">
+              <div class="game-item house-picked">
+                <!-- <img src="images/icon-rock.svg" alt="rock"> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="game-rules-btn">
+      <button class="rules-btn">Rules</button>
+    </div>
+
+  </div>
+
+  <div class="game-rules-wrapper">
+    <div class="game-rules">
+
+      <h2>Rules</h2>
+
+      <img src="images/icon-close.svg" alt="close" class="close">
+
+      <div class="game-rules__img">
+        <img src="images/image-rules.svg" alt="rules">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

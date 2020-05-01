@@ -1,0 +1,132 @@
+.game-stage-1 {
+  background-image: url("../../images/bg-triangle.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  margin-bottom: 30px;
+
+  @include media(520px) {
+    background-position: center 30px;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 22px;
+    grid-template-areas:
+      "paper scissors"
+      "rock rock";
+  }
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfdfdf;
+  @include size(155px);
+  border-radius: 50%;
+  box-shadow: -2px 9px 0px -1px inset rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  img {
+    width: 40%;
+    transition: all 0.3s ease;
+  }
+
+  @include media(520px) {
+    @include size(100px);
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include size(200px);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  position: relative;
+
+  @include media(520px) {
+    @include size(130px);
+  }
+}
+
+.wrapper:hover .game-item {
+  box-shadow: none;
+
+  img {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+.wrapper:active .game-item {
+  img {
+    transform: scale(1);
+  }
+}
+
+.game-item-1 {
+  grid-area: paper;
+}
+
+.game-item-2 {
+  grid-area: scissors;
+}
+
+.game-item-3 {
+  grid-area: rock;
+  margin: auto;
+}
+
+.game-item-1:hover {
+  box-shadow: 0px 0px 0px 10px hsla(230, 89%, 62%, 0.2);
+}
+
+.game-item-1:active {
+  box-shadow: 0px 0px 0px 5px hsla(230, 89%, 62%, 0.2);
+}
+
+.game-item-2:hover {
+  box-shadow: 0px 0px 0px 10px hsla(39, 89%, 49%, 0.2);
+}
+
+.game-item-2:active {
+  box-shadow: 0px 0px 0px 5px hsla(39, 89%, 49%, 0.2);
+}
+
+.game-item-3:hover {
+  box-shadow: 0px 0px 0px 10px hsla(349, 71%, 52%, 0.2);
+}
+
+.game-item-3:active {
+  box-shadow: 0px 0px 0px 5px hsla(349, 71%, 52%, 0.2);
+}
+
+.paper {
+  background-image: $Paper-Gradient;
+  box-shadow: 0px 10px 0px -1px hsla(230, 89%, 62%, 0.6);
+}
+
+.scissors {
+  background-image: $Scissors-Gradient;
+  box-shadow: 0px 10px 0px -1px hsla(39, 89%, 49%, 0.6);
+}
+
+.rock {
+  background-image: $Rock-Gradient;
+  box-shadow: 0px 10px 0px -1px hsla(349, 71%, 52%, 0.6);
+}
+
+.game-stage-1.active {
+  display: none;
+}

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+@import "./helpers/vars.scss";
+@import "./helpers/mixins.scss";
+@import "./layout/game-info";
+@import "./layout/game-rules";
+@import "./layout/game-stage-1";
+@import "./layout/game-stage-2";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.game {
+  background-image: $Radial-Gradient;
+  min-height: 100vh;
+  padding: 45px 20px 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
