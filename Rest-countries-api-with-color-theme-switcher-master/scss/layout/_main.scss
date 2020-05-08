@@ -1,0 +1,133 @@
+.main {
+  min-height: 100vh;
+  background-color: $Very-Dark-Blue-BG;
+  padding: 45px 0;
+  position: relative;
+
+  .container {
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+    @include media(768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form__input {
+      position: relative;
+
+      @include media(768px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .search-icon {
+        position: absolute;
+        font-size: 18px;
+        left: 30px;
+        top: 50%;
+        translate: 50% -50%;
+      }
+    }
+
+    &__search {
+      @include size(480px, 55px);
+      background-color: $Dark-Blue-el;
+      border-radius: 5px;
+      color: $White;
+      font-weight: 600;
+      padding-left: 75px;
+      transition: all 0.2s ease;
+
+      @include media(768px) {
+        width: 100%;
+      }
+    }
+
+    &__search:hover {
+      background-color: $Dark-Gray-input;
+    }
+
+    &__search:focus {
+      background-color: $Dark-Gray-input;
+    }
+
+    .dropdown-filter {
+      position: relative;
+      width: 200px;
+    }
+
+    .dropdown {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $Dark-Blue-el;
+      height: 55px;
+      padding: 20px 20px 20px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown:hover {
+      background-color: $Dark-Gray-input;
+    }
+
+    .filters {
+      position: absolute;
+      width: 200px;
+      background-color: $Dark-Blue-el;
+      border-radius: 5px;
+      padding: 20px 20px 20px 25px;
+      margin-top: 5px;
+
+      transform: translateY(-50%) scaleY(0);
+      opacity: 0;
+      transition: all 0.3s ease;
+
+      .filter-item {
+        margin-bottom: 15px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .filter-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .filter-item:hover {
+        color: $Dark-Gray-input;
+      }
+    }
+
+    .filters.show {
+      transform: translateY(0) scaleY(1);
+      opacity: 1;
+    }
+  }
+}
+
+/* ----------------------------------------------- */
+
+body.light .main {
+  background-color: $Very-Light-Gray-LBG;
+
+  .form__search {
+    background-color: $White;
+    color: $Very-Dark-Blue-text;
+  }
+
+  .dropdown {
+    background-color: $White;
+  }
+
+  .filters {
+    background-color: $White;
+  }
+}

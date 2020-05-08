@@ -1,0 +1,42 @@
+.header {
+  background-color: $Dark-Blue-el;
+  padding: 25px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 14px;
+
+    @include media(500px) {
+      font-size: 8px;
+    }
+  }
+
+  &__mode {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    @include media(500px) {
+      font-size: 14px;
+    }
+
+    .dark {
+      margin-right: 10px;
+    }
+  }
+
+  &__mode:hover {
+    color: $Dark-Gray-input;
+  }
+}
+
+/* ----------------------------------------------- */
+
+body.light .header {
+  background-color: $White;
+}

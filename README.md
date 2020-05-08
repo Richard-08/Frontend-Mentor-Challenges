@@ -31,3 +31,4 @@
 ### Difficulty: ADVANCED :sunglasses:
 
 20. [Rock-paper-scissors-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rock-paper-scissors-master/)
+21. [Rest-countries-api-with-color-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rest-countries-api-with-color-theme-switcher-master/)

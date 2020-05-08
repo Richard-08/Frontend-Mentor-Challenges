@@ -1,0 +1,145 @@
+.details-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $Very-Dark-Blue-BG;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.details-modal.show {
+  width: 100%;
+  min-height: 100vh;
+  animation: show 1s linear;
+  transition: all 0.3s ease;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0) translateY(-100%);
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.container {
+}
+
+.country-detail {
+}
+
+.back {
+  @include size(140px, 40px);
+  margin: 60px 0;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.details {
+  display: flex;
+  align-items: center;
+
+  @include media(900px) {
+    flex-direction: column;
+  }
+
+  &__img {
+    flex: 1;
+  }
+
+  &__text {
+    flex: 1;
+    margin-left: 145px;
+
+    @include media(1160px) {
+      margin-left: 60px;
+    }
+
+    @include media(660px) {
+      margin-left: 0;
+    }
+
+    h2 {
+      margin-bottom: 35px;
+      font-size: 30px;
+
+      @include media(900px) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 115px;
+
+    @include media(1160px) {
+      column-gap: 60px;
+    }
+
+    @include media(660px) {
+      column-count: 1;
+    }
+
+    li {
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.border-countries {
+  margin-top: 75px;
+  font-weight: 600;
+
+  @include media(900px) {
+    margin-top: 30px;
+  }
+
+  &__btn {
+    @include size(100px, 28px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__btn:last-child {
+    margin-right: 0;
+  }
+}
+
+.btn {
+  background-color: $Dark-Blue-el;
+  color: $White;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 3px rgba($color: #000000, $alpha: 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: $Dark-Gray-input;
+  box-shadow: none;
+}
+
+/* -----------Light mode------------ */
+
+body.light .details-modal {
+  background-color: $Very-Light-Gray-LBG;
+
+  .btn {
+    color: $Very-Dark-Blue-text;
+    background-color: $White;
+  }
+}

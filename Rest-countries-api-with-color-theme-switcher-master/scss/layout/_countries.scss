@@ -1,0 +1,84 @@
+.countries-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 75px;
+
+  @include media(1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+  }
+
+  @include media(768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px;
+  }
+
+  @include media(500px) {
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+  }
+
+  .country {
+    background-color: $Dark-Blue-el;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &__info {
+      padding: 30px 25px 45px 25px;
+    }
+
+    &__flag {
+      width: 100%;
+      height: 160px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &__name {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-weight: 600;
+    }
+
+    &__population,
+    &__region,
+    &__capital {
+      font-weight: 300;
+    }
+
+    &__region {
+      margin: 10px 0;
+    }
+
+    &__capital {
+    }
+  }
+
+  .country:hover {
+    transform: scale(1.08);
+  }
+
+  .country:hover {
+    box-shadow: 0px 0px 5px 5px rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+/* ----------------------------------------------- */
+
+.countries-box.lock {
+  display: none;
+}
+
+body.light .country {
+  background-color: $White;
+  box-shadow: 0px 0px 10px 3px rgba($color: #000000, $alpha: 0.1);
+}
