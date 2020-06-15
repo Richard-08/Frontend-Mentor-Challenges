@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/* font-family: 'Inter', sans-serif;*/
+
+@import "./helpers/vars.scss";
+@import "./helpers/mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: $Dark-Blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  width: 1300px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  @include media(800px) {
+    flex-direction: column-reverse;
+    padding: 35px;
+    padding-bottom: 75px;
+  }
+}
+
+.testimonials {
+  background-image: url("../images/pattern-curve.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  overflow: hidden;
+  &__body {
+    flex: 1;
+    padding-top: 65px;
+    margin-right: -120px;
+    margin-left: 95px;
+    background-image: url("../images/pattern-quotes.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 90px top;
+    position: relative;
+    z-index: 10;
+
+    @include media(1300px) {
+      margin-left: 60px;
+    }
+
+    @include media(800px) {
+      margin-right: 0;
+      margin-left: 0;
+      text-align: center;
+      background-position: center top;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    animation: appearLeft 1s linear;
+    transition: all 0.2s ease;
+
+    @include media(800px) {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    @include media(600px) {
+      font-size: 20px;
+    }
+  }
+
+  @keyframes appearLeft {
+    0% {
+      transform: translateX(-100%);
+      /* opacity: 0; */
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+      /* opacity: 1; */
+    }
+  }
+
+  &__autor {
+    animation: appear 1s linear;
+    transition: all 0.2s ease;
+
+    @include media(600px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__autor-name {
+    font-size: 18px;
+    font-weight: 700;
+
+    @include media(600px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__autor-position {
+    color: $Grayis-Blue;
+    font-size: 18px;
+  }
+
+  &__img {
+    flex: 1;
+    padding: 60px 0 55px 60px;
+    background-image: url("../images/pattern-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    @include media(1300px) {
+      padding-right: 60px;
+    }
+
+    @include media(600px) {
+      padding: 35px;
+    }
+  }
+
+  &__image-wrapper {
+    img {
+      border-radius: 5px;
+      box-shadow: 5px 20px 20px 1px hsla(246, 54%, 52%, 0.2);
+      animation: appearRight 1s linear;
+      transition: all 0.2s ease;
+    }
+
+    @include media(600px) {
+      margin-top: 45px;
+    }
+  }
+
+  @keyframes appearRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    left: 125px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px 3px hsla(246, 54%, 52%, 0.2);
+
+    @include media(800px) {
+      left: 50%;
+      translate: -50%;
+    }
+  }
+
+  &__prev-btn {
+    border-radius: 30px 0px 0px 30px;
+  }
+
+  &__next-btn {
+    border-radius: 0px 30px 30px 0px;
+  }
+
+  .btn {
+    background-color: #fff;
+    padding: 18px 22px;
+    cursor: pointer;
+
+    img {
+      display: flex;
+      transition: all 0.2s ease;
+    }
+
+    @include media(600px) {
+      padding: 10px 15px;
+    }
+  }
+
+  &__prev-btn:hover {
+    img {
+      transform: translateX(-2px);
+    }
+  }
+
+  &__prev-btn:active {
+    img {
+      transform: translateX(-5px);
+    }
+  }
+
+  &__next-btn:hover {
+    img {
+      transform: translateX(2px);
+    }
+  }
+
+  &__next-btn:active {
+    img {
+      transform: translateX(5px);
+    }
+  }
+}
