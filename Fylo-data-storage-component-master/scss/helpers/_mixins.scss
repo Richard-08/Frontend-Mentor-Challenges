@@ -1,0 +1,29 @@
+/* Breakpoints */
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+// size to one line
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Flexbox
+@mixin flexbox($is-column, $align: null, $justify: null) {
+  display: flex;
+
+  @if $is-column {
+    flex-direction: column;
+  }
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+}

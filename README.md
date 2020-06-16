@@ -11,25 +11,26 @@
 7. [Huddle-landing-page-with-single-introductory-section-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Huddle-landing-page-with-single-introductory-section-master/)
 8. [Fylo-landing-page-with-two-column-layout-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-landing-page-with-two-column-layout-master/)
 9. [Coding-bootcamp-testimonials-slider-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Coding-bootcamp-testimonials-slider-master/)
+10. [Fylo-data-storage-component-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-data-storage-component-master/)
 
 ### Difficulty: JUNIOR :hugs:
 
-10. [Social-media-dashboard-with-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Social-media-dashboard-with-theme-switcher-master/index.html)
-11. [Insure-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Insure-landing-page-master/)
-12. [Pricing-component-with-toggle-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Pricing-component-with-toggle-master/)
-13. [Project-tracking-intro-component-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Project-tracking-intro-component-master/)
-14. [Сlipboard-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Сlipboard-landing-page-master/)
-15. [Fylo-dark-theme-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-dark-theme-landing-page-master/)
+11. [Social-media-dashboard-with-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Social-media-dashboard-with-theme-switcher-master/index.html)
+12. [Insure-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Insure-landing-page-master/)
+13. [Pricing-component-with-toggle-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Pricing-component-with-toggle-master/)
+14. [Project-tracking-intro-component-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Project-tracking-intro-component-master/)
+15. [Сlipboard-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Сlipboard-landing-page-master/)
+16. [Fylo-dark-theme-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-dark-theme-landing-page-master/)
 
 ### Difficulty: INTERMEDIATE :cowboy_hat_face:
 
-16. [Static-job-listings-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Static-job-listings-master/)
-17. [Easybank-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Easybank-landing-page-master/)
-18. [Manage-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Manage-landing-page-master/)
-19. [Url-shortening-api-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Url-shortening-api-master/)
-20. [Bookmark-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Bookmark-landing-page-master/)
+17. [Static-job-listings-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Static-job-listings-master/)
+18. [Easybank-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Easybank-landing-page-master/)
+19. [Manage-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Manage-landing-page-master/)
+20. [Url-shortening-api-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Url-shortening-api-master/)
+21. [Bookmark-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Bookmark-landing-page-master/)
 
 ### Difficulty: ADVANCED :sunglasses:
 
-21. [Rock-paper-scissors-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rock-paper-scissors-master/)
-22. [Rest-countries-api-with-color-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rest-countries-api-with-color-theme-switcher-master/)
+22. [Rock-paper-scissors-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rock-paper-scissors-master/)
+23. [Rest-countries-api-with-color-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rest-countries-api-with-color-theme-switcher-master/)
