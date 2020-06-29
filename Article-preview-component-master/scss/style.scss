@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+/* font-family: 'Manrope', sans-serif */
+
+@import "./helpers/vars.scss";
+@import "./helpers/mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: $Very-Dark-Grayish-Blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+.article-preview {
+  background-color: $Light-Grayish-Blue;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.article {
+  max-width: 100%;
+  width: 730px;
+  height: 280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+
+  @include media(700px) {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__img {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+
+    animation: leftAppear 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @keyframes leftAppear {
+      0% {
+        transform: translateY(100%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @include media(700px) {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+
+  &__text-content {
+    width: 60%;
+    padding: 35px 40px;
+
+    animation: rigthAppear 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @keyframes rigthAppear {
+      0% {
+        transform: translateY(-100%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @include media(900px) {
+      overflow: hidden;
+    }
+
+    @include media(700px) {
+      width: 100%;
+      padding: 40px 30px 18px 30px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__text {
+    line-height: 1.7;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    color: $Desaturated-Dark-Blue;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+
+  &__author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+
+  &__author-name {
+  }
+
+  &__date {
+    color: $Grayish-Blue;
+  }
+
+  &__share {
+  }
+
+  &__share-btn {
+    background-color: $Light-Grayish-Blue;
+    @include size(30px);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 2;
+
+    @include media(700px) {
+      margin-top: 18px;
+    }
+  }
+
+  &__share-btn:hover {
+    background-color: $Desaturated-Dark-Blue;
+  }
+
+  &__share-btn:hover &__share-btn-icon path {
+    fill: #fff;
+  }
+
+  &__share-links {
+    background-color: $Very-Dark-Grayish-Blue;
+    position: absolute;
+    top: -80px;
+    right: -32%;
+    display: flex;
+    align-items: center;
+    padding: 15px 34px;
+    border-radius: 10px;
+    transform: translateY(50px) scale(0);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @include media(900px) {
+      margin-right: -40px;
+      margin-left: -40px;
+      width: calc(100% + 80px);
+      height: 100%;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+      transform: translateX(100%);
+    }
+
+    @include media(700px) {
+      margin-right: -30px;
+      margin-left: -30px;
+      width: calc(100% + 60px);
+      border-radius: 0 0 10px 10px;
+      height: calc(100% + 18px);
+    }
+  }
+
+  &__share-links.show {
+    transform: translateY(0) scale(1);
+
+    @include media(900px) {
+      transform: translateX(0);
+    }
+  }
+
+  &__share-links::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translate(50%);
+    border-right: 15px solid transparent;
+    border-top: 15px solid $Very-Dark-Grayish-Blue;
+    border-left: 15px solid transparent;
+
+    @include media(900px) {
+      display: none;
+    }
+  }
+
+  &__share-item:first-child {
+    color: $Grayish-Blue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 20px;
+  }
+
+  &__share-item {
+    margin-right: 15px;
+  }
+
+  &__share-item:last-child {
+    margin-right: 15px;
+  }
+
+  &__share-link {
+  }
+
+  &__share-icon {
+  }
+
+  &__share-icon:hover path {
+    fill: $Grayish-Blue;
+  }
+}
