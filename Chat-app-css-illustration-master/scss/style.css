@@ -1,0 +1,467 @@
+/* Breakpoints */
+/* ## Colors */
+/* ### Primary */
+/* #### Text */
+/* #### Gradients */
+/* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+/* ### Secondary */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 970px) {
+  .main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 40px 20px;
+  }
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  left: -7%;
+  top: 0;
+  width: 36%;
+  height: 87.5%;
+  background-image: linear-gradient(200deg, #e942ff, #8838ff);
+  border-radius: 0 0 300px 300px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .main::before {
+    left: -50%;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  right: -14%;
+  bottom: 0;
+  width: 36%;
+  height: 87.5%;
+  background-color: #f7f5fa;
+  border-radius: 300px 300px 0 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .main::after {
+    right: -50%;
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.container {
+  max-width: 100%;
+  width: 815px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 25%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 970px) {
+  .container {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.chat-wrapper {
+  max-width: 100%;
+  width: 250px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 30px 25px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 15px 30px 25px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
+  -webkit-animation: appearLeft 0.5s ease;
+          animation: appearLeft 0.5s ease;
+}
+
+@-webkit-keyframes appearLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.chat-wrapper .chat {
+  background-color: #f5f3f7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.chat-wrapper .chat__head {
+  background-image: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(270deg, #e942ff, #8838ff);
+  border-radius: 20px 20px 5px 5px;
+  padding: 30px 15px 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.chat-wrapper .chat__head::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 130px;
+  height: 28px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.chat-wrapper .chat__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.chat-wrapper .chat__info i {
+  font-size: 12px;
+}
+
+.chat-wrapper .chat__author-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #fff;
+  margin: 0 8px;
+}
+
+.chat-wrapper .chat__author-name h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.chat-wrapper .chat__author-name p {
+  font-size: 9px;
+  color: #d89eff;
+}
+
+.chat-wrapper .chat__options-toggle {
+  font-size: 10px;
+  color: #fff;
+}
+
+.chat-wrapper .chat__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 8px;
+}
+
+.chat-wrapper .chat .message {
+  max-width: 130px;
+  font-size: 8px;
+  padding: 7px;
+  margin-bottom: 7px;
+  -webkit-animation: load 0.8s 1 ease forwards;
+          animation: load 0.8s 1 ease forwards;
+}
+
+@-webkit-keyframes load {
+  100% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+@keyframes load {
+  100% {
+    -webkit-transform: translateX(0) translateY(0) scale(1);
+            transform: translateX(0) translateY(0) scale(1);
+  }
+}
+
+.chat-wrapper .chat .message:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.chat-wrapper .chat .message:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.chat-wrapper .chat .message:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.chat-wrapper .chat .message:nth-child(4) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.chat-wrapper .chat .message:nth-child(5) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.chat-wrapper .chat .message:nth-child(6) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.chat-wrapper .chat .message:nth-child(7) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.chat-wrapper .chat .message:nth-child(8) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.chat-wrapper .chat__user-1 {
+  color: #9241c8;
+  background-color: #eee6f4;
+  border-radius: 10px 10px 10px 5px;
+  -webkit-transform: translateX(-50%) translateY(50%) scale(0);
+          transform: translateX(-50%) translateY(50%) scale(0);
+}
+
+.chat-wrapper .chat__user-2 {
+  background-color: white;
+  color: #6e5d7e;
+  border-radius: 10px 10px 5px 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateX(50%) translateY(50%) scale(0);
+          transform: translateX(50%) translateY(50%) scale(0);
+}
+
+.chat-wrapper .chat__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 7px;
+}
+
+.chat-wrapper .chat__img:last-child {
+  margin-right: 0;
+}
+
+.chat-wrapper .chat .images {
+  max-width: 150px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat-wrapper .chat .purple {
+  max-width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  background-image: linear-gradient(135deg, #e942ff, #8838ff);
+}
+
+.chat-wrapper .chat .purple div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat-wrapper .chat .purple span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #e570ff;
+  margin-right: 7px;
+}
+
+.chat-wrapper .chat .purple h4 {
+  font-size: 12px;
+}
+
+.chat-wrapper .chat__footer {
+  margin-top: 8px;
+  background-color: white;
+  padding: 5px 5px 5px 20px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat-wrapper .chat__footer p {
+  color: #c6cacd;
+  font-size: 9px;
+}
+
+.chat-wrapper .chat__footer i {
+  color: #3e2753;
+  font-size: 25px;
+}
+
+.text-content {
+  max-width: 440px;
+  position: relative;
+  z-index: 10;
+  -webkit-animation: appear 0.5s ease;
+          animation: appear 0.5s ease;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text-content {
+    margin-top: 70px;
+    text-align: center;
+  }
+}
+
+.text-content__title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #3e2753;
+  margin-bottom: 35px;
+}
+
+.text-content__text {
+  color: #a39daa;
+  line-height: 1.7;
+}
+/*# sourceMappingURL=style.css.map */

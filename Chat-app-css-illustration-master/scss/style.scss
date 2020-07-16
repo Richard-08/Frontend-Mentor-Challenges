@@ -1,0 +1,322 @@
+@import "./helpers/mixins.scss";
+@import "./helpers/vars.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  @include media(970px) {
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -7%;
+    top: 0;
+    width: 36%;
+    height: 87.5%;
+    background-image: $BG-Gradient;
+    border-radius: 0 0 300px 300px;
+    z-index: 1;
+
+    @include media(750px) {
+      left: -50%;
+      width: 100%;
+      height: 50%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -14%;
+    bottom: 0;
+    width: 36%;
+    height: 87.5%;
+    background-color: #f7f5fa;
+    border-radius: 300px 300px 0 0;
+    z-index: 1;
+
+    @include media(750px) {
+      right: -50%;
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
+
+.container {
+  max-width: 100%;
+  width: 815px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25%;
+  overflow: hidden;
+
+  @include media(970px) {
+    margin-left: 0;
+  }
+
+  @include media(750px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.chat-wrapper {
+  max-width: 100%;
+  width: 250px;
+  background-color: $White;
+  padding: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 15px 30px 25px 0px rgba($color: #000000, $alpha: 0.08);
+  position: relative;
+  z-index: 10;
+  animation: appearLeft 0.5s ease;
+
+  @keyframes appearLeft {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .chat {
+    background-color: $Light-Grayish-Violet;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__head {
+      background-image: $Gradient;
+      border-radius: 20px 20px 5px 5px;
+      padding: 30px 15px 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 130px;
+        height: 28px;
+        background-color: $White;
+        border-radius: 15px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      color: #fff;
+
+      i {
+        font-size: 12px;
+      }
+    }
+
+    &__author-img {
+      @include size(25px);
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #fff;
+      margin: 0 8px;
+    }
+
+    &__author-name {
+      h5 {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 9px;
+        color: $Pale-Violet;
+      }
+    }
+
+    &__options-toggle {
+      font-size: 10px;
+      color: #fff;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 8px;
+    }
+
+    .message {
+      max-width: 130px;
+      font-size: 8px;
+      padding: 7px;
+      margin-bottom: 7px;
+      animation: load 0.8s 1 ease forwards;
+
+      @keyframes load {
+        100% {
+          transform: translateX(0) translateY(0) scale(1);
+        }
+      }
+
+      @for $i from 1 through 8 {
+        &:nth-child(#{$i}) {
+          animation-delay: #{$i}s;
+        }
+      }
+    }
+
+    &__user-1 {
+      color: $Moderate;
+      background-color: hsl(272, 41%, 93%);
+      border-radius: 10px 10px 10px 5px;
+      transform: translateX(-50%) translateY(50%) scale(0);
+    }
+
+    &__user-2 {
+      background-color: $White;
+      color: $Desaturated;
+      border-radius: 10px 10px 5px 10px;
+      align-self: flex-end;
+      transform: translateX(50%) translateY(50%) scale(0);
+    }
+
+    &__img {
+      @include size(40px);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 7px;
+    }
+
+    &__img:last-child {
+      margin-right: 0;
+    }
+
+    .images {
+      max-width: 150px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+    }
+
+    .purple {
+      max-width: 160px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      background-image: $Gradient-2;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      span {
+        @include size(10px);
+        border-radius: 50%;
+        border: 1px solid $Very-Light-Magenta;
+        margin-right: 7px;
+      }
+
+      h4 {
+        font-size: 12px;
+      }
+    }
+
+    &__footer {
+      margin-top: 8px;
+      background-color: $White;
+      padding: 5px 5px 5px 20px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: $Grayish-Blue;
+        font-size: 9px;
+      }
+
+      i {
+        color: $Very-Dark-Desaturated-Violet;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.text-content {
+  max-width: 440px;
+  position: relative;
+  z-index: 10;
+  animation: appear 0.5s ease;
+
+  @keyframes appear {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @include media(750px) {
+    margin-top: 70px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    color: $Very-Dark-Desaturated-Violet;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    color: $Dark-Grayish-Violet;
+    line-height: 1.7;
+  }
+}

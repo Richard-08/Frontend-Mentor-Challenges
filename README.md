@@ -16,22 +16,23 @@
 
 ### Difficulty: JUNIOR :hugs:
 
-12. [Social-media-dashboard-with-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Social-media-dashboard-with-theme-switcher-master/index.html)
-13. [Insure-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Insure-landing-page-master/)
-14. [Pricing-component-with-toggle-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Pricing-component-with-toggle-master/)
-15. [Project-tracking-intro-component-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Project-tracking-intro-component-master/)
-16. [Сlipboard-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Сlipboard-landing-page-master/)
-17. [Fylo-dark-theme-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-dark-theme-landing-page-master/)
+1. [Social-media-dashboard-with-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Social-media-dashboard-with-theme-switcher-master/index.html)
+2. [Insure-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Insure-landing-page-master/)
+3. [Pricing-component-with-toggle-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Pricing-component-with-toggle-master/)
+4. [Project-tracking-intro-component-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Project-tracking-intro-component-master/)
+5. [Сlipboard-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Сlipboard-landing-page-master/)
+6. [Fylo-dark-theme-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Fylo-dark-theme-landing-page-master/)
 
 ### Difficulty: INTERMEDIATE :cowboy_hat_face:
 
-18. [Static-job-listings-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Static-job-listings-master/)
-19. [Easybank-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Easybank-landing-page-master/)
-20. [Manage-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Manage-landing-page-master/)
-21. [Url-shortening-api-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Url-shortening-api-master/)
-22. [Bookmark-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Bookmark-landing-page-master/)
+1. [Static-job-listings-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Static-job-listings-master/)
+2. [Easybank-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Easybank-landing-page-master/)
+3. [Manage-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Manage-landing-page-master/)
+4. [Url-shortening-api-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Url-shortening-api-master/)
+5. [Bookmark-landing-page-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Bookmark-landing-page-master/)
+6. [Chat-app-css-illustration-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Chat-app-css-illustration-master/)
 
 ### Difficulty: ADVANCED :sunglasses:
 
-23. [Rock-paper-scissors-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rock-paper-scissors-master/)
-24. [Rest-countries-api-with-color-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rest-countries-api-with-color-theme-switcher-master/)
+1. [Rock-paper-scissors-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rock-paper-scissors-master/)
+2. [Rest-countries-api-with-color-theme-switcher-master](https://richard-08.github.io/Frontend-Mentor-Challenges/Rest-countries-api-with-color-theme-switcher-master/)
